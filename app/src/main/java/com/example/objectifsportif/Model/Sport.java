@@ -1,4 +1,4 @@
-package com.example.objectifsportif.Model;
+package com.example.objectifsportif.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
