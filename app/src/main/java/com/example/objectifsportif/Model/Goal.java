@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey;
 import java.util.Date;
 
 @Entity
-public class Objectif {
+public class Goal {
 
     @PrimaryKey(autoGenerate = true)
     public int uid;
@@ -16,10 +16,10 @@ public class Objectif {
     public int sportId;
 
     @ColumnInfo(name="start")
-    public Date start;
+    public long start;
 
     @ColumnInfo(name="stop")
-    public Date end;
+    public long end;
 
     @ColumnInfo(name="isTemps")
     public Boolean isTemps;
