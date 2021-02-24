@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 @Dao
-public interface DaoObjectif {
+public interface DaoGoal {
     @Query("Select * from Goal")
     List<Goal> getAll();
 
