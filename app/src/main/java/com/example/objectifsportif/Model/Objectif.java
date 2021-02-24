@@ -12,19 +12,19 @@ public class Objectif {
     @PrimaryKey(autoGenerate = true)
     public int uid;
 
-    @ColumnInfo(name="label")
+    @ColumnInfo(name="sportId")
     public int sportId;
 
-    @ColumnInfo(name="label")
+    @ColumnInfo(name="start")
     public Date start;
 
-    @ColumnInfo(name="label")
+    @ColumnInfo(name="stop")
     public Date end;
 
-    @ColumnInfo(name="label")
+    @ColumnInfo(name="isTemps")
     public Boolean isTemps;
 
-    @ColumnInfo(name="label")
+    @ColumnInfo(name="value")
     public int value;
 
 }
