@@ -23,7 +23,7 @@ public interface DaoGoal {
     Goal getOneGoalById(int id);
 
     @Insert
-    int insert(Goal goal);
+    long insert(Goal goal);
 
     @Delete
     void delete(Goal goal);

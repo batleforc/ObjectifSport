@@ -14,8 +14,17 @@ public interface DaoSport {
     @Query("Select * from sport")
     List<Sport> getAll();
 
+    @Query("select * from sport where istime = 1")
+    List<Sport> getTimeSport();
+
+    @Query("select * from sport where isdistance = 1")
+    List<Sport> getDistanceSport();
+
+    @Query("select * from sport where uid = :id limit 1")
+    Sport getOneSport(int id);
+
     @Insert
-    int insert(Sport sport);
+    long insert(Sport sport);
 
     @Update
     int update(Sport sport);

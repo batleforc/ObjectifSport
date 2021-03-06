@@ -15,20 +15,11 @@ public class Sport {
     @ColumnInfo(name="label")
     public String label;
 
-    @ColumnInfo(name="temps")
-    public Boolean temps;
+    @ColumnInfo(name="istime")
+    public boolean isTime;
 
-    @ColumnInfo(name="day")
-    public long Day;
+    @ColumnInfo(name="isdistance")
+    public boolean isDistance;
 
-    @ColumnInfo(name="distance")
-    public Boolean distance;
-
-    public Date getDate(){
-        return new Date(this.Day);
-    }
-    public void setDate(Date date){
-        this.Day = date.getTime();
-    }
 
 }
