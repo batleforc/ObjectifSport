@@ -4,6 +4,8 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.util.Date;
+
 @Entity
 public class Sport {
 
@@ -13,10 +15,11 @@ public class Sport {
     @ColumnInfo(name="label")
     public String label;
 
-    @ColumnInfo(name="temps")
-    public Boolean temps;
+    @ColumnInfo(name="istime")
+    public boolean isTime;
 
-    @ColumnInfo(name="distance")
-    public Boolean distance;
+    @ColumnInfo(name="isdistance")
+    public boolean isDistance;
+
 
 }
